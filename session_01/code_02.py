@@ -3,7 +3,18 @@
 
 """
 
-from code_01 import *
+def squares():
+    for x in range(1, 5):
+        yield x**x
+
+def weekdays():
+    yield "Sunday"
+    yield "Monday"
+    yield "Tuesday"
+    yield "Wednesday"
+    yield "Thrusday"
+    yield "Friday"
+    yield "Saturday"
 
 def run(coro):
     try:
